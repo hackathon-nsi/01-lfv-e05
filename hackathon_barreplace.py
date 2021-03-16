@@ -17,18 +17,29 @@ width, height = im.size
 
 # valeurs du pixel de coordonnées x, y (l'origine (0, 0) est en haut à gauche)
 def barreplace ():
+    for y in range(0,448):
+        for x in range(0,356):
+            pixel = im_3.getpixel((x, y))
+            p_rouge = pixel[0]
+            p_vert =  pixel[1]
+            p_bleu =  pixel[2]
+             #if change taille de bande
+             #x change la distance bande-reste (si deplacement à l'arriere de premiere bande x=x-(distance attendue-1) )
+             #y monte/decent la barre
 
-    for i in range(0,50,50):
-        pixel = im_3.getpixel((x, y))
-        p_rouge = pixel[0]
-        p_vert =  pixel[1]
-        p_bleu =  pixel[2]
-         #if change taille de bande
-         #x change la distance bande-reste (si deplacement à l'arriere de premiere bande x=x-(distance attendue-1) )
-         #y monte/decent la barre
 
-        if i%100==0:
-            im_new.putpixel((x,y+10),(p_rouge,p_vert,p_bleu))
+            if 49<x<100:
+                im_new.putpixel((x+50,y+10),(p_rouge,p_vert,p_bleu))
+            elif 99<x<150:
+                im_new.putpixel((x-50,y+5),(p_rouge,p_vert,p_bleu))
+            elif 149<x<200:
+                im_new.putpixel((x+100,y+10),(p_rouge,p_vert,p_bleu))
+            elif 199<x<250:
+                im_new.putpixel((x,y+5),(p_rouge,p_vert,p_bleu))
+            elif 249<x<300:
+                im_new.putpixel((x-100,y+10),(p_rouge,p_vert,p_bleu))
+            else:
+                im_new.putpixel((x,y),(p_rouge,p_vert,p_bleu))
 
 
 
@@ -41,7 +52,8 @@ def barreplace ():
     #im.putpixel((x,y),(r,g,b))
 
     # affichage de l'image
-    barreplace()
+
     #im.show()
-    im_new.show()
-    ##im_3.show()
+
+barreplace()
+im_new.show()    ##im_3.show()
