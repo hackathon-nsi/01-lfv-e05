@@ -9,6 +9,7 @@
 <!-- ne pas effacer les lignes ci-dessus et mettre à jour la progression régulièrement -->
 
 ## JOURNAL DE BORD
-
+programme principal cree par Nicolas 
 
 ## DOCUMENTATION
+fonction "barreplace" de Nicolas: Prend des barres de L'image et les deplace horizontalement (peut aussi changer l'ordre des barres si je l'arrive)
