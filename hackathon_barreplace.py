@@ -1,5 +1,5 @@
 from PIL import Image
-from IPython.display import display
+##from IPython.display import display
 import urllib.request
 #programme fait par Nicolas vdv
 # ouvrir une image hébergée sur internet
