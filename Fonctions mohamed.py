@@ -9,13 +9,12 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
-
 from PIL import Image
 from IPython.display import display
 import urllib.request
 #programme de Mohamed
-# ouvrir une image hébergée sur internet
-im = Image.open(urllib.request.urlopen('https://raw.githubusercontent.com/hackathon-nsi/h7n-nsi-01/main/images/washington.bmp'))
+# ouvrir une image
+im = Image.open(AZIZ/BAC1/NSI/washington)
 # le deuxième argument représente la taille de l'image et le troisième argument (optionnel) la couleur de remplissage au format RVB
 im_new = Image.new("RGB", (500, 500), (255, 255, 255))
 
@@ -49,16 +48,17 @@ def coller ():
     icopyIm.paste(croppedi, (550,500))
     icopyIm.save('pasted.bmp')
 
-# Cette fonction permet de mettre un filtre de couleur grise sur l´image
+# Cette fonction permet d´enlever la couleur rouge de l´image
 
-def gris (im):
+def couleur (im):
 
-    return im.convert("L")
-if __name__ == "__main__":
-    with image.open('https://raw.githubusercontent.com/hackathon-nsi/h7n-nsi-01/main/images/washington.bmp') as im:
-        im = im.convert("RGBA")
-        greyscale_im = greyscale(im)
-        greyscale_im.save('https://raw.githubusercontent.com/hackathon-nsi/h7n-nsi-01/main/images/washington.bmp')
+    im_data = im.load()
+height,width = im.size
+for loop1 in range(height):
+    for loop2 in range(width):
+        r,g,b = im_data[loop1,loop2]
+        im_data[loop1,loop2] = 0,g,b
+im_new.save('changed.jpeg')
 
     # affichage de l'image
 
@@ -66,5 +66,5 @@ if __name__ == "__main__":
 
 bandes()
 coller()
-gris(ss)
+gris()
 im_new.show()
