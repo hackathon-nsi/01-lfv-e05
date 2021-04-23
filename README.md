@@ -20,3 +20,19 @@
 -Update "Barreplace": la base est terminée, en se moment j'essaye encore de améliorer le changements des barres sur l'axe X + je vais voir si je peux faire que le L'utilisateur peux choisir la largeur de chaque bande (voir "BarreplaceLarge")
 
 -Fonction "BarreplaceLarge": Permet a l'utilisateur de choisir la largeur des bandes, elle est encore en state "Beta" donc elle presente encore des problemes mais montre une idée generale de la fonction
+
+
+
+## JOURNAL DE BORD
+-Fonction "bandes" crée par Mohamed
+
+-Fonction "coller" crée par Mohamed
+
+-Fonction "couleur" crée par Mohamed
+
+## DOCUMENTATION
+-La fonction "bandes" permet de changer la couleur des pixels en haut et en bas de l´image.
+
+-La fonction "coller" permet de couper une partie de l´image et de la copier sur plusieurs partie de l´image.
+
+-La fonction "couleur" permet d´enlever la couleur rouge de l´image.
