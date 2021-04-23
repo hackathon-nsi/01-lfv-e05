@@ -9,12 +9,13 @@
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
 
+
 from PIL import Image
 from IPython.display import display
 import urllib.request
 #programme de Mohamed
 # ouvrir une image
-im = Image.open(AZIZ/BAC1/NSI/washington)
+im = Image.open("Capture_hackathon.PNG")
 # le deuxième argument représente la taille de l'image et le troisième argument (optionnel) la couleur de remplissage au format RVB
 im_new = Image.new("RGB", (500, 500), (255, 255, 255))
 
@@ -26,12 +27,12 @@ width, height = im.size
 
 def bandes ():
 
-    for y in range(250,300):
-        for x in range(0,600):
+    for y in range(width):
+        for x in range(15, 40):
             im_new.putpixel ((x, y) , (210,210,210))
 
-    for y in range(600,750):
-        for x in range(0,600):
+    for y in range(width):
+        for x in range(400, 423):
             im_new.putpixel ((x, y) , (255,255,255))
 
 # Cette fonction permet de couper une partie de l´image et de la copier sur plusieurs partie de l´image
