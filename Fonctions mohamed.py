@@ -67,5 +67,5 @@ im_new.save('changed.jpeg')
 
 bandes()
 coller()
-gris()
+couleur()
 im_new.show()
