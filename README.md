@@ -37,3 +37,14 @@
 -La fonction "coller" permet de couper une partie de l´image et de la copier sur plusieurs partie de l´image.
 
 -La fonction "couleur" permet d´enlever la couleur rouge de l´image.
+
+## JOURNAL DE BORD
+-Fonction "triangle" crée par Yassine
+
+-Fonction "sombre" crée par Yassine
+
+## DOCUMENTATION
+-La fonction "sombre" permet de changer les couleur pls sombre^.
+
+-La fonction "triangle" permet de couper des triangles dans les 4 cotes.
+
