@@ -44,7 +44,7 @@
 -Fonction "sombre" crée par Yassine
 
 ## DOCUMENTATION
--La fonction "sombre" permet de changer les couleur pls sombre^.
+-La fonction "sombre" permet de changer les couleur pls sombre.
 
 -La fonction "triangle" permet de couper des triangles dans les 4 cotes.
 
