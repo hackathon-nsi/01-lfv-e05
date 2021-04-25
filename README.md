@@ -21,6 +21,7 @@
 
 -Fonction "BarreplaceLarge": Permet a l'utilisateur de choisir la largeur des bandes, elle est encore en state "Beta" donc elle presente encore des problemes mais montre une idée generale de la fonction
 
+-Programme final: Un programme tres simple qui ouvre chque programme un apres l'autre
 
 
 ## JOURNAL DE BORD
